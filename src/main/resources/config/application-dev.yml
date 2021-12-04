@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/face_recognition
+    username: root
+    password: root
+
+facelib:
+  dimensions: 300
+  maxItemCount: 1000000
+  maxLibCount: 32
+  rootPath: "G:/Programme/IDEA/FaceRecognition/hnswlib/facelib"

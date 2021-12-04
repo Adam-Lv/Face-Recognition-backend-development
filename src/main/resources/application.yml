@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    active: dev
+
+faceServer:
+  url: http://202.120.39.13:25129/image_rec
+
+server:
+  port: 80
