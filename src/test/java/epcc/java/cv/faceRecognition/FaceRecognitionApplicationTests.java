@@ -60,7 +60,7 @@ class SpringBootTestApplicationTests {
         faceMapper.insertOne(new FaceItem(4, new float[] {0.3F, 0.6F, 0.9F, 0.5F, 0.2F}, 2));
         faceMapper.insertOne(new FaceItem(5, new float[] {0.7F, 0.2F, 0.9F, 0.4F, 0.1F}, 2));
         faceMapper.insertOne(new FaceItem(6, new float[] {0.5F, 0.7F, 0.9F, 0.4F, 0.2F}, 1));
-        faceMapper.insertOne(new FaceItem(6, new float[] {0.5F, 0.6F, 0.9F, 0.5F, 0.3F}, 3));
+        faceMapper.insertOne(new FaceItem(7, new float[] {0.5F, 0.6F, 0.9F, 0.5F, 0.3F}, 3));
         faceMapper.saveAsClass(faceLibConfigEntity.getRootPath());
     }
 
@@ -76,6 +76,7 @@ class SpringBootTestApplicationTests {
         testVector.add(new float[]{0.44F, 0.66F, 0.87F, 0.52F, 0.31F});
         System.out.println(faceMapper.getIdByVector(new float[]{0.6F, 0.6F, 0.9F, 0.5F, 0.3F}, 2));
         System.out.println(faceMapper.getIdByVectors(testVector, 2));
+        System.out.println(faceMapper.getHnswIndex().size());
     }
 
     @Test
